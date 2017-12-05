@@ -1,5 +1,6 @@
 import fetch from 'node-fetch';
 import {result} from './results/api.js';
+import fs from 'fs';
 
 export var dog = {
     sound:'barkkk',
@@ -21,3 +22,4 @@ export var data = {
     }
 }
 
+console.log(data);
