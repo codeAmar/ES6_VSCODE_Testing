@@ -1,1 +1,5 @@
-console.log('this is eslint live working');
+export var dog = {
+    sound:'barkkk',
+    noise(sound){ return this.sound}
+}
+
