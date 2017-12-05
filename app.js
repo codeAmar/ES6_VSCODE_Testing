@@ -1,5 +1,5 @@
-// let fetch = require( 'node-fetch');
 import fetch from 'node-fetch';
+import {result} from './results/api.js';
 
 export var dog = {
     sound:'barkkk',
@@ -15,8 +15,9 @@ export var cat = {
 export var data = {
     url:'https://jsonplaceholder.typicode.com/posts/1',
     api(url){
-        return {} 
+        return result
         // fetch(url)
         // .then(response => response.json())
     }
 }
+
