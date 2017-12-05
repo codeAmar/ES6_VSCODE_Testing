@@ -43,13 +43,22 @@ describe('Testing API calls',()=>{
     expect(data.api(data.url)).to.be.an('object');
   })
 
-  it('response contains all the keys and values',()=>{
-    expect(data.api(data.url).title).to.be.a('string');
-    expect(data.api(data.url).id).to.be.a('number');
-    expect(data.api(data.url).userId).to.be.a('number');
-    expect(data.api(data.url).body).to.be.a('string');
-    
+  // checking the format of the api calls
+  describe('response contains all the keys and values',()=>{
+    it('format -> title:string',()=>{
+      expect(data.api(data.url).title).to.be.a('string');
+    })
+    it('format -> id:number',()=>{
+      expect(data.api(data.url).id).to.be.a('number');
+      
+    })
+    it('format -> userId:number',()=>{
+      expect(data.api(data.url).userId).to.be.a('number');
+      
+    })
+    it('format -> body:string',()=>{
+      expect(data.api(data.url).body).to.be.a('string');
+    })
   })
-
-
+  
 })
